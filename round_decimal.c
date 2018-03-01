@@ -3,7 +3,7 @@ void main()
 {
 float n,t;
 int temp,N;
-printf("enter the one digit floating point number");
+printf("enter the  floating point number");
 scanf("%f",&n);
 temp=n;
 t=temp+0.5;
