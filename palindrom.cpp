@@ -6,7 +6,7 @@ int i,j,l;
 cout<<"enter the string";
 cin>>s1;
 l=strlen(s1);
-for(i=0,j=l;s[i]!='\0';i++,j--)
+for(i=0,j=l;s1[i]!='\0';i++,j--)
 {
 s2[j]=s1[i];
 }
