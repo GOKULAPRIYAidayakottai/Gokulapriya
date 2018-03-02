@@ -1,6 +1,8 @@
-#include<stdio.h>
-#include<conio.h>
-void main()
+
+
+#include <stdio.h>
+#include<string.h>
+int main()
 {
 int arr[20],i=0,max,temp;
 printf("enter array elements");
@@ -19,6 +21,9 @@ arr[i]=max;
 max=temp;
 }
 }
-printf("maximum element is %d",arr[10]);
+printf("maximum element is %d",max);
+    return 0;
 }
+
+
 
