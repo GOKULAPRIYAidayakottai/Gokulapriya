@@ -23,6 +23,6 @@ max=a[i];
 }
 }
   printf("max = %d",max);
-   printf("min = %d",min);
+   printf("\nmin = %d",min);
 }
 
