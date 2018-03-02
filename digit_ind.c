@@ -2,7 +2,7 @@
 void main()
 {
 int n,rem,count,temp,a[20],i=0,N;
-printf("enter the number");
+printf("enter the number ");
 scanf("%d",&n);
 temp=n;
 while(n!=0)
@@ -17,7 +17,7 @@ rem=temp%10;
 a[--count]=rem;
 temp/=10;
 }
-printf("digits in a given number");
+printf("digits in a given number ");
 for(i=0;i<N;i++)
 {
 printf("%d  ",a[i]);
