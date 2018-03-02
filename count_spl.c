@@ -1,5 +1,10 @@
-#include<stdio.h>
-void main()
+
+
+#include <stdio.h>
+#include<string.h>
+#include<math.h>
+#include<ctype.h>
+int main()
 {
 char str[30];
 int i=0,count=0;
@@ -7,7 +12,7 @@ int i=0,count=0;
   scanf("%s",&str);
 while(str[i]!='\0')
 {
-if(isdigit(str[i])||!(alnum(str[i]))
+if(!(isdigit(str[i]))&&!(isalnum(str[i])))
 {
 ++count;
 }
@@ -15,4 +20,8 @@ if(isdigit(str[i])||!(alnum(str[i]))
 }
 
 printf("no of special characters is %d ",count);
+    return 0;
 }
+
+
+
