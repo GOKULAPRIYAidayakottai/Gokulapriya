@@ -20,7 +20,7 @@ temp/=10;
 printf("digits in a given number");
 for(i=0;i<N;i++)
 {
-printf("%d\t",a[i]);
+printf("%d  ",a[i]);
 }
 }
 
