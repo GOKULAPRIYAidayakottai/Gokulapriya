@@ -7,6 +7,6 @@ void main()
     i = i ^ k;
     k = i ^ k;
     i = i ^ k;
-    printf("value of i=%d k=%d after swapping", i, k);
+    printf("\nvalue of i=%d k=%d after swapping", i, k);
     
  }
