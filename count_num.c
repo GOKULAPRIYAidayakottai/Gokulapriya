@@ -13,6 +13,6 @@ if(isdigit(str[i]))
 }
 ++i;
 }
-count++;
+
 printf("no of digits is %d ",count);
 }
