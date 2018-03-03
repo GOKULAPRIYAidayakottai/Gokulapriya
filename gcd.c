@@ -1,15 +1,29 @@
-#include<stdio.h>
-void main()
+
+
+#include <stdio.h>
+
+int main()
 {
-int a,b,min;
-scanf("%d%d",&a,&b);
-min=(a<b)?a:b;
-for(min=1; min <= a && min <= b; ++min)
+   int arr[20],i=0,min,temp;
+printf("enter array elements");
+
+  for(i=0;i<10;i++)
 {
-if((a%min==0)&&(b%min==0))
+scanf("%d",&arr[i]);
+}
+min=arr[0];
+for(i=0;i<10;i++)
 {
-printf("gcd of given num is %d",min);
-  break;
+if(arr[i]<min)
+{
+temp=arr[i];
+arr[i]=min;
+min=temp;
 }
 }
+printf("maximum element is %d",min);
+    return 0;
 }
+
+
+
