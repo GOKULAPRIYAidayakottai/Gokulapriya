@@ -1,8 +1,18 @@
-#include<stdio.h>
-void main()
+
+
+#include <stdio.h>
+
+int main()
 {
-for(int i=1;i<=5;i++)
+    int n;
+    printf("enter the number");
+    scanf("%d",&n);
+   for(int i=1;i<=n;i++)
 {
 printf("Hello\t");
 }
+    return 0;
 }
+
+
+
