@@ -1,14 +1,21 @@
-#include<stdio.h>
-void main()
+
+
+#include <stdio.h>
+
+int main()
 {
-int num,pow,i,mul;
+   
+  int num,pow,i,mul;
 printf("enter num and power");
 scanf("%d",&num);
 scanf("%d",&pow);
-mul=num;
+mul=1;
 for(i=1;i<=pow;i++)
 {
 mul=mul*num;
 }
 printf("answer = %d",mul);
+return 0;
 }
+    
+
