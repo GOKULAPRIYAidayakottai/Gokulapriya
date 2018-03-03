@@ -1,18 +1,25 @@
-#inlcude<stdio.h>
-void main()
+
+
+#include <stdio.h>
+
+int main()
 {
-int a,b,c;
+    int a,b,c;
 scanf("%d%d%d",&a,&b,&c);
 if((a>b)&&(a>c))
 {
-printf("a is big");
+printf("%d is big",a);
 }
-elseif(b>c)
+else if(b>c)
 {
-printf("b is big");
+printf("%d is big",b);
 }
 else
 {
-printf("c is big");
+printf("%d is big",c);
 }
+    return 0;
 }
+
+
+
