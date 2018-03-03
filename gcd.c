@@ -4,24 +4,24 @@
 
 int main()
 {
-   int arr[20],i=0,min,temp;
+   int arr[20],i=0,max,temp;
 printf("enter array elements");
 
   for(i=0;i<10;i++)
 {
 scanf("%d",&arr[i]);
 }
-min=arr[0];
+max=arr[0];
 for(i=0;i<10;i++)
 {
-if(arr[i]<min)
+if(arr[i]>max)
 {
 temp=arr[i];
-arr[i]=min;
-min=temp;
+arr[i]=max;
+max=temp;
 }
 }
-printf("maximum element is %d",min);
+printf("maximum element is %d",max);
     return 0;
 }
 
