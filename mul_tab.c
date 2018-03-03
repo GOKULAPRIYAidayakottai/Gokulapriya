@@ -1,14 +1,19 @@
-#include<stdio.h>
-void main()
+
+
+#include <stdio.h>
+
+int main()
 {
-int i,j,n;
+    int j,n;
 scanf("%d",&n);
-for(i=0;i<=n;i++)
+
+for(j=1;j<=n;j++)
 {
-for(j=0;j<=n;j++)
-{
-printf("%d\t",(i*j));
+printf("%d\t",(5*j));
 }
-printf("\n");
+
+    return 0;
 }
-}
+
+
+
