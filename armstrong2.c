@@ -1,25 +1,36 @@
+
+
 #include <stdio.h>
-void main()
+
+int main()
 {
-int  remainder, result,start,end;
-printf("Enter a the integer: ");
-scanf("%d", &number);
-printf("enter starting and ending integer");
-scanf("%d%d",&start,&end);
-printf("armstrong numbers are..");
-for(num=start;num<=end;num++)
+    int n1,n2, original, remainder, result = 0,i,c=0;
+    printf("enter the limit");
+
+scanf("%d%d", &n1,&n2);
+for(i=n1;i<=n2;i++)
 {
-i=num;
+    original=i;
+while (original > 0)
+{
+remainder = original%10;
+result += remainder*remainder*remainder;
+original /= 10;
+}
+if(result == i)
+{
+c++;
+}
+if(c != 0)
+{
+printf("%d is an Armstrong number.",i);
+}
 result=0;
-while (i != 0)
-{
-remainder = i%10;
-result += i*i*i;
-i /= 10;
+c=0;
 }
-if(result == num)
-{
-printf("%d",num);
+
+    return 0;
 }
-}
-}
+
+
+
