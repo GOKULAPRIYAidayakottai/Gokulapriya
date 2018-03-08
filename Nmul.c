@@ -1,13 +1,20 @@
-#include<stdio.h>
-void main()
+
+
+#include <stdio.h>
+#include<math.h>
+int main()
 {
-int i,mul=1,num,a[30];  
+ int i,mul=1,num,a;  
 scanf("%d",&num);
-printf("enter numbers");
-for(i=1;i<=num;i++)
+while(num>0)
 {
-scanf("%d",a[i]);
-mul=mul*a[i];
+  a=num%10;   
+  num=num/10;
+  mul=mul*a;
 }
   printf("product=%d",mul);
+    return 0;
 }
+
+
+
