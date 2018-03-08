@@ -1,10 +1,14 @@
-#include<stdio.h>
-void main()
+
+#include <stdio.h>
+#include<math.h>
+int main()
 {
-int a,n,d;
-float sum;
-printf("enter the values of a,n,d");
-scanf("%d%d%d",&a,&n,&d);
-sum=a+(a+(n-1)d);
-printf("sum of AP series is %f",sum);
+    int a,n,d;
+int sum;
+printf("enter the values of a,d,n");
+scanf("%d%d%d",&a,&d,&n);
+sum=a+(a+(n-1)*d);
+printf("sum of AP series is %d",sum);
+
+    return 0;
 }
