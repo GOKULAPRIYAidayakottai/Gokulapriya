@@ -1,17 +1,19 @@
-#include<stdio.h>
-void main()
+#include <stdio.h>
+#include<string.h>
+int main()
 {
-int a[10],n,i=0,l=0;
+    char a[10];
+   int n,i=0,l=0,k=0;
 printf("enter the string");
 scanf("%s",&a);
 printf("enter N value");
 scanf("%d",&n);
-while(a[i]!='\0')
+l=strlen(a);
+
+for(i=--l;n>0;i--,n--)
 {
-l++;
+    printf("%c\t",a[i]);
 }
-for(i=--l;n>0;i++,n--)
-{
-printf("%d",a[i]);
-}
+
+    return 0;
 }
