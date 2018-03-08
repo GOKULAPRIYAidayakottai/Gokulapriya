@@ -1,7 +1,10 @@
+
+
 #include <stdio.h>
+#include<math.h>
 int main()
 {
-    char str[20],ch;
+ char str[20],ch;
     int i,j,n1=0,n2=0,t;
   printf("enter the string");
   scanf("%s",&str);
@@ -19,7 +22,7 @@ int main()
             
               n2=(n2*10)+(str[j]-48);
           }
-          printf("%d\t%d",n1,n2);
+          printf("n1 = %d\nn2 = %d\noperator = %c",n1,n2,ch);
 
   switch(ch)
   {
@@ -30,5 +33,7 @@ int main()
       default:printf("\nonly '/' or '%' only can be perform");           
   }
     return 0;
-} 
+}
+
+
 
