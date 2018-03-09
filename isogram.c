@@ -1,13 +1,16 @@
-#include<stdio.h>
-void main()
+
+
+#include <stdio.h>
+#include<string.h>
+int main()
 {
-char str[20];
+   char str[20];
     int flag=0,i,j;
     printf("enter the string");
     scanf("%s",&str);
     for(i=0;str[i]!='\0';i++)
     {
-        for(j=0;str[j]!='\0';j++)
+        for(j=i+1;str[j]!='\0';j++)
          {
             if(str[i]==str[j])
             {
@@ -23,4 +26,8 @@ char str[20];
     {
         printf("\nstring is NOT A ISOGRAM");
     }
+    return 0;
 }
+
+
+
