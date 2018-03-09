@@ -1,8 +1,15 @@
-#include<stdio.h>
-vaid main()
+
+
+#include <stdio.h>
+#include<string.h>
+int main()
 {
-char ch;
-printf("enter the character");
-scanf("%c",&c);
-printf("ASCII value of %c is %d",ch,ch);
+   char c;
+   printf("enter the character : ");
+   scanf("%c",&c);
+   printf("\nASCII value = %d",c);
+    return 0;
 }
+
+
+
